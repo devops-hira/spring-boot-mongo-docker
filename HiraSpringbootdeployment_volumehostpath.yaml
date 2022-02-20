@@ -23,7 +23,7 @@ spec:
     spec:
       containers:
       - name: springbootcontainer
-        image: hiralalsahu/spring-boot-mongo-k8:latest
+        image: hiralalsahu/spring-boot-mongo:latest
         ports:
         - containerPort: 8080
         resources:
