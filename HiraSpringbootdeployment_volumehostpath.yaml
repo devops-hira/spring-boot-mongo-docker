@@ -21,11 +21,11 @@ spec:
       labels:
         app: springbootapp
     spec:
+      imagePullSecrets: 
+      - name: regcred
       containers:
       - name: springbootcontainer
         image: hiralalsahu/spring-boot-mongo:latest
-      imagePullSecrets: 
-      - name: regcred
         ports:
         - containerPort: 8080
         resources:
